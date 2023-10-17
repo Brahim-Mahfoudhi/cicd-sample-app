@@ -1,15 +1,14 @@
 #!/bin/bash
 set -euo pipefail
 
-if (templates/tempdir) [
-  cd /templates
-  rm -r tempdir
-]
-else [
+if [[ -d templates/tempdir ]]; then
+cd /templates
+rm -r tempdir
+else 
 mkdir tempdir
 mkdir tempdir/templates
 mkdir tempdir/static
-]
+
 cp sample_app.py tempdir/.
 cp -r templates/* tempdir/templates/.
 cp -r static/* tempdir/static/.
