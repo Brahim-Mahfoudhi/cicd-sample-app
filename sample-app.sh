@@ -1,8 +1,7 @@
 #!/bin/bash
 set -euo pipefail
 
-if [[ -d templates/tempdir ]]; then
-  cd /templates
+if [[ -d BuildSampleApp/tempdir ]]; then
   rm -r tempdir
 else 
 mkdir tempdir
