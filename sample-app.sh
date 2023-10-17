@@ -1,7 +1,7 @@
 #!/bin/bash
 set -euo pipefail
 
-if [[ -d BuildSampleApp/tempdir ]]; then
+if [[ -d BuildSampleApp/Workspace/tempdir ]]; then
   rm -r tempdir
 else 
 mkdir tempdir
