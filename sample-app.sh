@@ -2,12 +2,12 @@
 set -euo pipefail
 
 if [[ -d templates/tempdir ]]; then
-cd /templates
-rm -r tempdir
+  cd /templates
+  rm -r tempdir
 else 
-mkdir tempdir
-mkdir tempdir/templates
-mkdir tempdir/static
+  mkdir tempdir
+  mkdir tempdir/templates
+  mkdir tempdir/static
 
 cp sample_app.py tempdir/.
 cp -r templates/* tempdir/templates/.
