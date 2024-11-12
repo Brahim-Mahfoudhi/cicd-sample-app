@@ -6,7 +6,7 @@ pipeline {
 
     environment {
         JENKINS_SERVER = 'http://172.16.128.100:8080' //NEEDS TO BE CHANGED
-        DOTNET_PROJECT_PATH = dotnet-2425-tiao1/Rise.Server/Rise.Server.csproj'
+        DOTNET_PROJECT_PATH = 'dotnet-2425-tiao1/Rise.Server/Rise.Server.csproj'
         DOTNET_TEST_PATH = 'dotnet-2425-tiao1/Rise.Domain.Tests/Rise.Domain.Tests.csproj'
         PUBLISH_OUTPUT = 'publish'
         DOTNET_ENVIRONMENT = 'Production'
